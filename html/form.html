@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment_form</title>
+</head>
+<body>
+    <form action=""> <!--action ke aandar server ki location di jati hai -->
+
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name: <input type="text" name="name" id="" required></p><!--required likhne se bina name likhe hum pay now click nahi kaar sakte-->
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male <input type="radio" name="gender" id="">
+                Female <input type="radio" name="gender" id="">
+    
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="" cols="80" rows="5"></textarea></p>
+         
+        <H2>Payment Information</H2>
+        <p>Card type
+            <select name="card_type" id="card_type">
+                <option value="">--Select a Card type--</option> <!--value ke aandar na likhne se ise hum select karke form submit nahi kar sakte-->
+                <option value="visa">Vaisa </option>
+                <option value="Rupay">Rupay</option>
+                <option value="Master Card">Master Card</option>
+            </select>
+        </p>  
+        <p>Card Number: <input type="number" name="card_number" id="card_number"></p>
+        <p>Expiry Date: <input type="date" name="exp_date" id="exp_date"></p>
+        <p>CVV: <input type="password" name="cvv" id="cvv"></p>
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
